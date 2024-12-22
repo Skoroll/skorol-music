@@ -5,7 +5,7 @@ import "./index.css"
 
 function App() {
   return (
-    <div className="App bg-bgColor text-textBase">
+    <div className="App bg-bgColor text-textBase font-roboto">
       <Header/>
       <Home />
      <Footer />
