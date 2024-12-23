@@ -1,5 +1,5 @@
 import React from "react";
-import fr from "../../assets/lang/fr.json";
+import fr from "../assets/lang/fr.json";
 function Nav() {
   return (
     <nav className="">

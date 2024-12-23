@@ -1,6 +1,6 @@
-import Header from "./components/Layout/Header.tsx";
-import Footer from "./components/Layout/Footer.tsx";
-import Home from "./pages/Home/Home.tsx";
+import Header from "./components/Header.tsx";
+import Footer from "./components/Footer.tsx";
+import Home from "./pages/Home.tsx";
 import "./index.css"
 
 function App() {

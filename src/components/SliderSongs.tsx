@@ -6,17 +6,17 @@ interface SliderProps {
     content: React.ReactNode;
 }
 
-function Slider({ month, year, content }: SliderProps){
+function SliderSongs({ month, year, content }: SliderProps){
     return (
         <div className="slider">
             <div className="s-header">
                 {month} - {year}
             </div>
-            <div className="s-content">
+            <div className="s-content flex ">
                 {content}
             </div>
         </div>
     );
 };
 
-export default Slider;
+export default SliderSongs;

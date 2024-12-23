@@ -3,17 +3,19 @@ import YouTube, { YouTubeProps } from 'react-youtube';
 
 interface VideoEmbedProps{
   videoId: string;
+  height: string;
+  width: string;
 }
 
-function VideoEmbed({ videoId }: VideoEmbedProps) {
+function VideoEmbed({ videoId, height, width }: VideoEmbedProps) {
   const onPlayerReady: YouTubeProps['onReady'] = (event) => {
     // accès au lecteur via event.target
     event.target.pauseVideo();
   };
 
   const opts: YouTubeProps['opts'] = {
-    height: '390',
-    width: '640',
+    height: height,
+    width: width,
     playerVars: {
     autoplay: 0,
     },

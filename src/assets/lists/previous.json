@@ -1,36 +1,45 @@
 [
     {
-        "id": "",
-        "name": "",
-        "band": "",
-        "album": "",
-        "release": "",
-        "genre": "",
+        "id": 1,
+        "name": "Silence Screams",
+        "band": "Jahrund",
+        "album": "Fiction World",
+        "release": "2024",
+        "genre": "Electro",
         "url": "",
         "month": "",
-        "year": ""
+        "year": "",
+        "cover": "",
+        "links" : 
+            {
+                "spotify": "https://open.spotify.com/artist/3hwB1EOyN7sZygMw5QXAUj?si=soCR_ojkRuCksvB41AdGUQ",
+                "deezer": ""
+            }
+        
     },
     {
-        "id": "",
-        "name": "",
-        "band": "",
-        "album": "",
-        "release": "",
-        "genre": "",
-        "url": "",
+        "id": 2,
+        "name": "Raiders Attack Vault City",
+        "band": "SPES INVICTA",
+        "album": "Raiders Attack Vault City",
+        "release": "2024",
+        "genre": "Synthwave",
+        "url": "M9TbHorF5_M",
         "month": "",
-        "year": ""
+        "year": "",
+        "cover": ""
     },
     {
-        "id": "",
-        "name": "",
-        "band": "",
-        "album": "",
-        "release": "",
-        "genre": "",
-        "url": "",
+        "id": 3,
+        "name": "Bad Mood",
+        "band": "Kyma",
+        "album": "Red Cloud",
+        "release": "2021",
+        "genre": "Psytrance",
+        "url": "MuPlJUCwuPk",
         "month": "",
-        "year": ""
+        "year": "",
+        "cover": ""
     }
-    
 ]
+

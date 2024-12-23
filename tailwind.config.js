@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         textBase: "#d8d8d4",
         bgColor: "#303030",
+        bgCard: '#2b1212',
         layoutColor: "#1f1f1f",
       }
     },
