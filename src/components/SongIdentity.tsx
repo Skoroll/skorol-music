@@ -19,7 +19,7 @@ interface SongIdentityProps {
 
 function SongIdentity({ lang, origin }: SongIdentityProps) {
   return (
-    <div className="song-identity flex justify-center p-5">
+    <div className="song-identity flex justify-center p-5 lg:flex-row">
       <ul className="flex flex-col gap-5 ">
         <li className="flex flex-col">
           <span className="font-bold flex flex-col">{lang.songTitle}</span>  <span>{origin.name}</span>

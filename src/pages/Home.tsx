@@ -11,15 +11,19 @@ function Home() {
     return (
         <div className="home flex flex-col flex-1">
             {/* Titre principal */}
-            <h1 className="font-montserra text-base">Skorol Music</h1>
-            <h2>{fr.subTitle}</h2>
+            <h1 className="font-montserra p-1.5 text-xl ">Skorol Music</h1>
+            <h2 className=" p-1.5 text-lg">{fr.subTitle}</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/skoroll_/" target="_blank"> <i className="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://discord.gg/ypsABckuDt" target="_blank"><i className="fa-brands fa-discord"></i> Discord</a></li>
+            </ul>
 
             {/* Vidéos actuelles */}
-            <div className="home-video flex flex-col gap-10">
+            <div className="home-video flex flex-col">
                 {Current.map((current) => (
                     <div key={current.id} className="home-song p-5 flex flex-col justify-center">
                         <Collapses
-                            name={current.name}
+                            name={`${current.id}/ ${current.name}`}
                             band={current.band}
                             content={<SongIdentity lang={fr} origin={current} />}
                             video={<VideoEmbed videoId={current.url} height="390" width="640" />}
@@ -40,7 +44,7 @@ function Home() {
                                     key={prevSong.id}
                                     month={prevSong.month}
                                     year={prevSong.year}
-                                    content={<VideoEmbed videoId={prevSong.url} />}
+                                    content={<VideoEmbed height="170px" width="270px" videoId={prevSong.url} />}
                                 />
                             ))}
                         </div>
