@@ -9,15 +9,16 @@ import fr from "../assets/lang/fr.json";
 
 function Home() {
     return (
-        <div className="home flex flex-col flex-1">
+        <div className="home flex flex-col gap-2.5">
             {/* Titre principal */}
-            <h1 className="font-montserra p-1.5 text-xl ">Skorol Music</h1>
-            <h2 className=" p-1.5 text-lg">{fr.subTitle}</h2>
-            <ul>
-                <li><a href="https://www.instagram.com/skoroll_/" target="_blank"> <i className="fa-brands fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://discord.gg/ypsABckuDt" target="_blank"><i className="fa-brands fa-discord"></i> Discord</a></li>
-            </ul>
-
+            <div className="main-title flex-col p-5">
+                <h1 className="font-montserra  text-xl ">Skorol Music</h1>
+                <h2 className="  text-lg">{fr.subTitle}</h2>
+                <ul className="flex gap-5">
+                    <li><a href="https://www.instagram.com/skoroll_/" rel="noreferrer" target="_blank"> <i className="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://discord.gg/ypsABckuDt" rel="noreferrer" target="_blank"><i className="fa-brands fa-discord"></i> Discord</a></li>
+                </ul>
+            </div>
             {/* Vidéos actuelles */}
             <div className="home-video flex flex-col">
                 {Current.map((current) => (
@@ -26,7 +27,7 @@ function Home() {
                             name={`${current.id}/ ${current.name}`}
                             band={current.band}
                             content={<SongIdentity lang={fr} origin={current} />}
-                            video={<VideoEmbed videoId={current.url} height="390" width="640" />}
+                            video={<VideoEmbed videoId={current.url} height="100%" width="100%" />}
                         />
                     </div>
                 ))}

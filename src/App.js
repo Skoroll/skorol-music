@@ -5,9 +5,11 @@ import "./index.css"
 
 function App() {
   return (
-    <div className="App bg-bgColor text-textBase font-roboto">
+    <div className="App bg-bgColor text-textBase font-roboto ">
       <Header/>
-      <Home />
+      <main className="p-5">
+        <Home />
+      </main>
      <Footer />
     </div>
   );

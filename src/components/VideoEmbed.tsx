@@ -14,14 +14,14 @@ function VideoEmbed({ videoId, height, width }: VideoEmbedProps) {
   };
 
   const opts: YouTubeProps['opts'] = {
-    height: height,
-    width: width,
+    height: `${height}`,
+    width: `${width}`,
     playerVars: {
     autoplay: 0,
     },
   };
 
-  return <YouTube className="flex justify-center" videoId={videoId} opts={opts} onReady={onPlayerReady} />;
+  return <YouTube className="video-embed flex justify-stretch w-full lg:w-9/12 mr-auto ml-auto max-h-96 max-w-screen-lg" videoId={videoId} opts={opts} onReady={onPlayerReady} />;
 }
 
 export default VideoEmbed;  

@@ -45,9 +45,19 @@ function Collapses({ month, year, content, name, band, video }: CollapsesProps) 
                     ref={contentRef}
                     className="c-content flex flex-row p-3 rounded-xl lg:flex-col"
                 >
-                    <div className="flex">{content}</div>
-                    <div className="flex mr-auto">{video}</div>
-                    <div className="flex">{/* Liens des groupes */}</div>
+                    <div className="c-identity-content flex-row lg:flex-col">
+                        {content}
+                    </div>
+                    <div className="c-video flex w-full h-96 lg:w-full">
+                        {video}
+                    </div>
+                    <div className="flex">{
+                    /* Liens des groupes */}
+                    </div>
+                    <div className="c-prevSongs">
+              
+
+                    </div>
                 </div>
             </div>
         </div>
