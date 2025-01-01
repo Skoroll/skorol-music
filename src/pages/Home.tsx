@@ -8,6 +8,7 @@ import PrevSongs from "../assets/lists/previous.json";
 import fr from "../assets/lang/fr.json";
 
 function Home() {
+    
     return (
         <div className="home flex flex-col gap-2.5">
             {/* Titre principal */}
@@ -27,7 +28,14 @@ function Home() {
                             name={`${current.id}/ ${current.name}`}
                             band={current.band}
                             content={<SongIdentity lang={fr} origin={current} />}
-                            video={<VideoEmbed videoId={current.url} height="100%" width="100%" />}
+                            
+                            video={
+                                <VideoEmbed 
+                                    videoId={current.url} 
+                                    height="100%" 
+                                    width="100%" 
+                                    className="video-embed flex justify-stretch w-full lg:w-9/12 mr-auto ml-auto h-96 max-w-screen-lg"
+                                    />}
                         />
                     </div>
                 ))}
@@ -39,13 +47,17 @@ function Home() {
                 <Collapses
                     name={"Morceaux précédents"}
                     content={
-                        <div className="flex flex-row gap-5">
+                        <div className="flex flex-row gap-5 p-5 overflow-scroll w-full overflow-y-auto">
                             {PrevSongs.map((prevSong) => (
                                 <SliderSongs
                                     key={prevSong.id}
-                                    month={prevSong.month}
-                                    year={prevSong.year}
-                                    content={<VideoEmbed height="170px" width="270px" videoId={prevSong.url} />}
+                                    content={
+                                        <VideoEmbed 
+                                            height="170px" 
+                                            width="270px" 
+                                            videoId={prevSong.url} 
+                                            className=""
+                                            />}
                                 />
                             ))}
                         </div>

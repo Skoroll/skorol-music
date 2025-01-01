@@ -48,7 +48,7 @@ function Collapses({ month, year, content, name, band, video }: CollapsesProps) 
                     <div className="c-identity-content flex-row lg:flex-col">
                         {content}
                     </div>
-                    <div className="c-video flex w-full h-96 lg:w-full">
+                    <div className="c-video flex w-full lg:w-full">
                         {video}
                     </div>
                     <div className="flex">{
