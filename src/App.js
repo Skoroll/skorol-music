@@ -2,6 +2,7 @@ import Header from "./components/Header.tsx";
 import Footer from "./components/Footer.tsx";
 import Home from "./pages/Home.tsx";
 import FilteredMusic from "./pages/FilteredMusic.tsx";
+import About from "./pages/About.tsx";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/all" element={<FilteredMusic />} /> 
                         <Route path="/:genre" element={<FilteredMusic />} /> {/* Route dynamique */}
+                        <Route path="/a-propos" element={<About />}/>
                     </Routes>
                 </main>
                 <Footer />
