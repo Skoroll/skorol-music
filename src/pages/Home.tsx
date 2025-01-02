@@ -31,7 +31,11 @@ function Home() {
     return (
         <div className="home flex flex-col gap-2.5">
             {/* Titre principal */}
-            <div className="main-title flex bg-ima bg-[url('./assets/drum-set-1839383_1280.jpg')] bg-no-repeat bg-cover h-56">
+            <div className="main-title 
+                flex 
+                bg-[url('./assets/drum-set-1839383_1280.jpg')] 
+                bg-no-repeat 
+                bg-cover ">
                 <div className="mt-auto ml-0 bg-bgOpacity w-full h-full p-5 flex flex-col justify-between">
                     <div className=""> 
                         <h1 className="font-montserra text-6xl">Skorol Music</h1>
