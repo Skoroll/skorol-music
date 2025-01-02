@@ -6,7 +6,7 @@ function Nav() {
   const navigate = useNavigate();
 
   const handleHomeBtn = () => {
-    navigate("/"); 
+    navigate("/skorol-music"); 
   };
 
   const handleAboutBtn = () => {

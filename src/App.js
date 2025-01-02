@@ -13,7 +13,7 @@ function App() {
                 <Header />
                 <main className="p-5 flex-1">
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/skorol-music" element={<Home />} />
                         <Route path="/all" element={<FilteredMusic />} /> 
                         <Route path="/:genre" element={<FilteredMusic />} /> {/* Route dynamique */}
                         <Route path="/a-propos" element={<About />}/>
