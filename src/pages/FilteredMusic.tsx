@@ -15,22 +15,25 @@ function FilteredMusic() {
 
     return (
         <div>
-            <h2>
+            <h2 className="font-bold border-b w-32 p-2">
                 {genre
                     ? genre === "all"
                         ? "Tous les morceaux"
                         : genre.charAt(0).toUpperCase() + genre.slice(1)
                     : "Genre inconnu"}
             </h2>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-0">
                 {filteredSongs.map((song) => (
-                    <VideoEmbed
-                        key={song.id}
-                        videoId={song.url}
-                        height="300"
-                        width="300"
-                        className="filtered-music-video .sm:w-3/12"
-                    />
+                    <div className="song-item  p-3  w-full md:w-1/3 xl:w-1/2">
+                        <p> {song.name} - {song.band}</p>
+                        <VideoEmbed
+                            key={song.id}
+                            videoId={song.url}
+                            height="300"
+                            width="300"
+                            className="filtered-music-video w-full"
+                        />
+                    </div>
                 ))}
             </div>
         </div>

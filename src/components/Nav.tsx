@@ -12,8 +12,8 @@ function Nav() {
   return (
     <nav className="flex justify-center p-2">
       <ul className="flex gap-5">
-        <li className="cursor-pointer" onClick={handleHomeBtn}>{fr.navHome}</li>
-        <li className="cursor-pointer">{fr.navAbout}</li>
+        <li className="cursor-pointer p-2 hover:bg-textBase hover:text-bgColor" onClick={handleHomeBtn}>{fr.navHome}</li>
+        <li className="cursor-pointer p-2 hover:bg-textBase hover:text-bgColor">{fr.navAbout}</li>
       </ul>
     </nav>
   );

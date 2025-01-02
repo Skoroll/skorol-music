@@ -7,9 +7,10 @@ interface CollapsesProps {
     year?: string;
     content?: React.ReactNode;
     video?: React.ReactNode;
+    divider?: string
 }
 
-function Collapses({ month, year, content, name, band, video }: CollapsesProps) {
+function Collapses({ month, year, content, name, band, video, divider }: CollapsesProps) {
     const [isOpen, setIsOpen] = useState(false);
     const contentRef = useRef<HTMLDivElement>(null); // Pour accéder à la hauteur du contenu
 
@@ -29,7 +30,7 @@ function Collapses({ month, year, content, name, band, video }: CollapsesProps) 
                     ) : (
                         <i className="fa-solid fa-arrow-down mr-6"></i>
                     )}
-                    {name} {month} - {year} {band}
+                    {name} {month} {divider} {year} {band}
                 </p>
             </div>
             <div
@@ -48,14 +49,14 @@ function Collapses({ month, year, content, name, band, video }: CollapsesProps) 
                     <div className="c-identity-content flex-row lg:flex-col">
                         {content}
                     </div>
-                    <div className="c-video flex w-full lg:w-full">
-                        {video}
-                    </div>
+                    <div className="c-video flex w-full lg:w-full" style={{ display: video ? "flex" : "none" }}>
+    {video}
+</div>
                     <div className="flex">{
                     /* Liens des groupes */}
                     </div>
                     <div className="c-prevSongs">
-              
+
 
                     </div>
                 </div>

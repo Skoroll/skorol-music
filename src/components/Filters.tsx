@@ -11,12 +11,12 @@ function Filters(){
         navigate(`${genre.toLowerCase()}`)
     }
     return(
-        <div className="filters p-3">
+        <div className="filters ">
             <p className="border-b-2">Filtres</p>
                 <ul className="filters-ul flex flex-wrap gap-2 p-3">
                         {uniqueGenres.map((genre, index) => (
                             <li key={index}
-                            className="cursor-pointer"
+                            className="cursor-pointer  p-2 hover:bg-textBase hover:text-bgColor"
                             onClick={() => handleGenreClick(genre)}
                             >
                                 {genre.charAt(0).toUpperCase() + genre.slice(1)}
