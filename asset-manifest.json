@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/skorol-music/static/css/main.cf0591f6.css",
-    "main.js": "/skorol-music/static/js/main.b2e3d1ee.js",
+    "main.css": "/skorol-music/static/css/main.4989dc13.css",
+    "main.js": "/skorol-music/static/js/main.551bbd98.js",
     "static/js/488.1851bd20.chunk.js": "/skorol-music/static/js/488.1851bd20.chunk.js",
     "static/media/drum-set-1839383_1280.jpg": "/skorol-music/static/media/drum-set-1839383_1280.f5d324d59676d00f29cc.jpg",
     "index.html": "/skorol-music/index.html",
-    "main.cf0591f6.css.map": "/skorol-music/static/css/main.cf0591f6.css.map",
-    "main.b2e3d1ee.js.map": "/skorol-music/static/js/main.b2e3d1ee.js.map",
+    "main.4989dc13.css.map": "/skorol-music/static/css/main.4989dc13.css.map",
+    "main.551bbd98.js.map": "/skorol-music/static/js/main.551bbd98.js.map",
     "488.1851bd20.chunk.js.map": "/skorol-music/static/js/488.1851bd20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf0591f6.css",
-    "static/js/main.b2e3d1ee.js"
+    "static/css/main.4989dc13.css",
+    "static/js/main.551bbd98.js"
   ]
 }
