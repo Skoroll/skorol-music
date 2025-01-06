@@ -1,20 +1,28 @@
-import React from 'react';
-import YouTube, { YouTubeProps } from 'react-youtube';
+import React, { useState, useEffect } from "react";
+import YouTube, { YouTubeProps } from "react-youtube";
+import ClipLoader from "react-spinners/ClipLoader";
 
 interface VideoEmbedProps {
   videoId: string;
   height: string;
   width: string;
-  className?: string; // Classe personnalisée facultative
+  className?: string;
 }
 
 function VideoEmbed({ videoId, height, width, className }: VideoEmbedProps) {
-  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
-    // accès au lecteur via event.target
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setLoading(false), 1000); // Délai de 1000ms pour le Spinner
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
+    // Arrête la lecture automatique lors de la préparation
     event.target.pauseVideo();
   };
 
-  const opts: YouTubeProps['opts'] = {
+  const opts: YouTubeProps["opts"] = {
     height: `${height}`,
     width: `${width}`,
     playerVars: {
@@ -23,12 +31,21 @@ function VideoEmbed({ videoId, height, width, className }: VideoEmbedProps) {
   };
 
   return (
-    <YouTube
-      className={`video-embed ${className || ''}`} // Ajout de la classe personnalisée
-      videoId={videoId}
-      opts={opts}
-      onReady={onPlayerReady}
-    />
+    <div className={`video-embed-container relative ${className || ""}`}>
+      {/* Vidéo YouTube */}
+      <YouTube
+        className="video-embed"
+        videoId={videoId}
+        opts={opts}
+        onReady={onPlayerReady}
+      />
+      {/* Spinner superposé */}
+      {loading && (
+        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
+          <ClipLoader color="#f6f1f1" loading size={50} />
+        </div>
+      )}
+    </div>
   );
 }
 

@@ -74,37 +74,6 @@ function Home() {
                 ))}
             </div>
 
-            {/* Chansons des semaines précédentes */}
-            <div>
-                <h1>Chansons des semaines précédentes</h1>
-                {PrevSongs.length > 0 ? (
-                    <Collapses
-                        name={"Morceaux précédents"}
-                        content={
-                            <div className="flex flex-wrap w-full overflow-y-auto">
-                                {PrevSongs.map((prevSong) => (
-                                    <SliderSongs
-                                        key={prevSong.id}
-                                        musicName={prevSong.name}
-                                        divider="-"
-                                        musicBand={prevSong.band}
-                                        content={
-                                            <VideoEmbed
-                                                height="170px"
-                                                width="270px"
-                                                videoId={prevSong.url}
-                                                className="w-full"
-                                            />
-                                        }
-                                    />
-                                ))}
-                            </div>
-                        }
-                    />
-                ) : (
-                    <p className="text-center text-gray-500 p-3">Pas encore de morceaux</p>
-                )}
-            </div>
         </div>
     );
 }

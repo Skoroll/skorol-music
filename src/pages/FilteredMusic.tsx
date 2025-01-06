@@ -14,11 +14,13 @@ function FilteredMusic() {
     const filteredSongs = genre === "all"
         ? combinedSongs
         : combinedSongs.filter(
-              (song) => genre && song.genre.trim().toLowerCase() === genre.trim().toLowerCase()
+              (song) =>
+                  genre &&
+                  song.genre.trim().toLowerCase() === genre.trim().toLowerCase()
           );
 
     return (
-        <div>
+        <div key={genre}>
             <h2 className="font-bold border-b w-32 p-2">
                 {genre
                     ? genre === "all"
@@ -28,8 +30,13 @@ function FilteredMusic() {
             </h2>
             <div className="flex flex-wrap gap-0">
                 {filteredSongs.map((song) => (
-                    <div key={song.id} className="song-item p-3 w-full md:w-1/3 xl:w-1/2">
-                        <p> {song.name} - {song.band}</p>
+                    <div
+                        key={song.id}
+                        className="song-item p-3 w-full md:w-1/3 xl:w-1/2"
+                    >
+                        <p>
+                            {song.name} - {song.band}
+                        </p>
                         <VideoEmbed
                             videoId={song.url}
                             height="300"

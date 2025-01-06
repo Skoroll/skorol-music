@@ -44,7 +44,7 @@ function Collapses({ month, year, content, name, band, video, divider }: Collaps
             >
                 <div
                     ref={contentRef}
-                    className="c-content flex flex-row p-3 rounded-xl lg:flex-col"
+                    className="c-content flex flex-col-reverse p-3 rounded-xl sm:flex-col"
                 >
                     <div className="c-identity-content flex-row lg:flex-col">
                         {content}
