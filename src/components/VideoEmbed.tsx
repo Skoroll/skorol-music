@@ -31,12 +31,12 @@ function VideoEmbed({ videoId, height, width, className }: VideoEmbedProps) {
   };
 
   return (
-    <div className={`video-embed-container relative ${className || ""}`}>
+    <div className={`video-embed-container relative w-full ${className || ""}`}>
       {/* Vidéo YouTube */}
       <YouTube
-        className="video-embed"
+        className="video-embed w-full"
         videoId={videoId}
-        opts={opts}
+        opts={opts}video-embed
         onReady={onPlayerReady}
       />
       {/* Spinner superposé */}
