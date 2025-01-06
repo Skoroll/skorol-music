@@ -32,7 +32,7 @@ function FilteredMusic() {
                 {filteredSongs.map((song) => (
                     <div
                         key={song.id}
-                        className="song-item p-3 w-full md:w-1/3 xl:w-1/2"
+                        className=" flex flex-col song-item p-3 w-full h-[370px] justify-between md:w-1/3 xl:w-1/2 "
                     >
                         <p>
                             {song.name} - {song.band}
