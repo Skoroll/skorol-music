@@ -21,7 +21,7 @@ function Filters() {
     return (
         <div className="filters">
             <p className="border-b-2">Filtres</p>
-            <ul className="filters-ul flex flex-wrap gap-2 p-3">
+            <ul className="filters-ul flex flex-wrap gap-1 p-3">
                 {uniqueGenres.map((genre, index) => (
                     <li
                         key={index}

@@ -10,12 +10,10 @@
         "month": "",
         "year": "",
         "cover": "",
-        "links" : 
-            {
-                "spotify": "https://open.spotify.com/artist/3hwB1EOyN7sZygMw5QXAUj?si=soCR_ojkRuCksvB41AdGUQ",
-                "deezer": ""
-            }
-        
+        "links": {
+            "spotify": "https://open.spotify.com/artist/3hwB1EOyN7sZygMw5QXAUj?si=soCR_ojkRuCksvB41AdGUQ",
+            "deezer": ""
+        }
     },
     {
         "id": 2,
@@ -37,6 +35,46 @@
         "release": "2021",
         "genre": "Psytrance",
         "url": "MuPlJUCwuPk",
+        "month": "",
+        "year": "",
+        "cover": ""
+    },
+    {
+        "id": 4,
+        "name": "Patagonia",
+        "band": "Patawawa",
+        "album": "Patagonia",
+        "release": "2018",
+        "genre": "Funk",
+        "url": "5C-der5DXNY",
+        "month": "",
+        "year": "",
+        "cover": "",
+        "links": {
+            "spotify": "https://open.spotify.com/artist/3hwB1EOyN7sZygMw5QXAUj?si=soCR_ojkRuCksvB41AdGUQ",
+            "deezer": ""
+        }
+    },
+    {
+        "id": 5,
+        "name": "Ja!",
+        "band": "Klaus Johann Grobe",
+        "album": "Du Bist so Symmetrisch",
+        "release": "2018",
+        "genre": "Pop",
+        "url": "sEZerH1KAr4",
+        "month": "",
+        "year": "",
+        "cover": ""
+    },
+    {
+        "id": 6,
+        "name": "Fever (Vantage Remix)",
+        "band": "Dua Lipa, Angèle, Vantage",
+        "album": "Fever",
+        "release": "2020",
+        "genre": "Funk",
+        "url": "OoWaG5H2RCs",
         "month": "",
         "year": "",
         "cover": ""
