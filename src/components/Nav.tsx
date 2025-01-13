@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 function Nav() {
   const navigate = useNavigate();
 
+
+
+
   const handleHomeBtn = () => {
     navigate("/skorol-music"); 
   };
