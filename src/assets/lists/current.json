@@ -3,42 +3,42 @@
 [
     {
         "id": 1,
-        "name": "Old Ways",
-        "band": "Oli",
-        "album": "Patagonia",
-        "release": "2024",
-        "genre": "Indie Pop",
-        "url": "IWiA43j6FUI",
+        "name": "Sorry",
+        "band": "Nothing But Thieves",
+        "album": "Broken Machines",
+        "release": "2017",
+        "genre": "Rock",
+        "url": "p9_BsjMi4bM",
         "month": "",
         "year": "",
         "cover": "",
         "links" : 
             {
-                "spotify": "https://open.spotify.com/artist/3hwB1EOyN7sZygMw5QXAUj?si=soCR_ojkRuCksvB41AdGUQ",
+                "spotify": "",
                 "deezer": ""
             }
         
     },
     {
         "id": 2,
-        "name": "Nana",
-        "band": "Lafleyne",
-        "album": "Nana",
-        "release": "2020",
-        "genre": "RnB",
-        "url": "Er8II9P1_DI",
+        "name": "TNT",
+        "band": "Aupinard",
+        "album": "Single",
+        "release": "2022",
+        "genre": "Soul",
+        "url": "DyX09nGCJAk",
         "month": "",
         "year": "",
         "cover": ""
     },
     {
         "id": 3,
-        "name": "Afterlife",
-        "band": "Thai McGrath ft. JustCosplaySings",
-        "album": "Phantom Liberty OST",
-        "release": "2024",
-        "genre": "Metal",
-        "url": "KWcGI5ylitQ",
+        "name": "It Hurts Until it Doesn't",
+        "band": "Mothers",
+        "album": "When You Walk a Long Distance You Are Tired",
+        "release": "2016",
+        "genre": "Rock",
+        "url": "UBspkKYg5U8",
         "month": "",
         "year": "",
         "cover": ""

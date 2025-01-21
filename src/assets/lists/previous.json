@@ -78,5 +78,48 @@
         "month": "",
         "year": "",
         "cover": ""
+    },
+    {
+        "id": 7,
+        "name": "Old Ways",
+        "band": "Oli",
+        "album": "Patagonia",
+        "release": "2024",
+        "genre": "Indie Pop",
+        "url": "IWiA43j6FUI",
+        "month": "",
+        "year": "",
+        "cover": "",
+        "links" : 
+            {
+                "spotify": "https://open.spotify.com/artist/3hwB1EOyN7sZygMw5QXAUj?si=soCR_ojkRuCksvB41AdGUQ",
+                "deezer": ""
+            }
+        
+    },
+    {
+        "id": 8,
+        "name": "Nana",
+        "band": "Lafleyne",
+        "album": "Nana",
+        "release": "2020",
+        "genre": "RnB",
+        "url": "Er8II9P1_DI",
+        "month": "",
+        "year": "",
+        "cover": ""
+    },
+    {
+        "id": 9,
+        "name": "Afterlife",
+        "band": "Thai McGrath ft. JustCosplaySings",
+        "album": "Phantom Liberty OST",
+        "release": "2024",
+        "genre": "Metal",
+        "url": "KWcGI5ylitQ",
+        "month": "",
+        "year": "",
+        "cover": ""
     }
 ]
+
